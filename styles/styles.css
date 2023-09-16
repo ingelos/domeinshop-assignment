@@ -21,10 +21,27 @@ Table of Contents:
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    overflow: auto;
+}
+
+/*main {
+    max-width: 1000px;
+    margin: 0 auto;
+}*/
+
+.grid {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 /*////////////////////////
@@ -32,15 +49,21 @@ body {
 ////////////////////////*/
 
 h1 {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 700;
 }
 
-h2 {
+p {
     font-size: 10px;
     font-weight: 300;
 }
 
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px;
+    text-align: center;
+}
 
 
 /*////////////////////////
@@ -48,32 +71,137 @@ h2 {
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
 
 header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 50vw;
+}
+
+.hero-content {
+    padding: 80px 0 400px 0;
     text-align: center;
 }
 
-.hero {
-    background-image: url("../assets/images/mountains.jpg");
-    background-size: cover;
-    background-position: center;
-    padding-top: 20px;
-    padding-bottom: 200px;
+.hero-subtitle {
+    margin: 20px;
 }
 
+.hero-input {
+    padding: 15px 45px;
+    border: 1px solid #1C2B32;
+    border-radius: 25px 0 0 25px;
+    color: #1C2B32;
+    background-color: transparent;
+}
+
+.hero-input::placeholder {
+    color: #1C2B32;
+}
+
+.hero-input:focus::placeholder {
+    color: transparent;
+    text-align: left;
+}
+
+.availability-button {
+    color: white;
+    background-color: #1C2B32;
+    padding: 15px;
+    border: 1px solid #1C2B32;
+    border-radius: 0 25px 25px 0;
+    margin: -3px;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.testimonial {
+    font-weight: 300;
+    box-shadow: 2px 2px 15px 3px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 40px 0 40px 0;
+}
+
+.testimonials .icon {
+    height: 21px;
+    position: relative; top:18px; left:45px;
+}
+
+blockquote {
+    padding: 0 40px 0 75px;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    height: 28px;
+    margin-left: 75px;
+    margin-right: 15px;
+}
+
+.avatar-name {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
 
 
 /*///////////// 3.3 Support /////////////*/
 
+.callcenter-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
+figcaption {
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    color: white;
+    background-color: #1C2B32;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+}
+
+.link {
+    color: #899CA0;
+}
+
+.link:hover {
+    text-decoration: none;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq summary {
+    font-weight: 300;
+    margin: 10px;
+}
 
+.faq details p {
+    font-weight: 400;
+    color: white;
+    background-color: #899CA0;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.faq summary:hover {
+    cursor: pointer;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    color: white;
+    background-color: #1C2B32;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
