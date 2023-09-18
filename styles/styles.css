@@ -134,7 +134,7 @@ header {
     position: relative; top:18px; left:45px;
 }
 
-blockquote {
+.testimonial p {
     padding: 0 40px 0 75px;
     margin-bottom: 15px;
 }
